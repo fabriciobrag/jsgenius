@@ -1,0 +1,9 @@
+.painel {width:320px; height:320px; margin:0 auto; position:relative; background:#222; padding:20px; border-radius:50%;}
+.color {width:150px; height:150px; position:absolute; cursor:pointer}
+.color.on {box-shadow:0 0 50px rgba(255,255,255,0.65) inset}
+.color:active {box-shadow:0 0 50px rgba(0,0,0,0.65) inset}
+
+.green {top:20px; left:20px; background:green; border-radius:180px 0 0 0}
+.red {top:20px; right:20px; background:red; border-radius:0 180px 0 0}
+.yellow {bottom:20px; left:20px; background:yellow; border-radius:0 0 0 180px}
+.blue {bottom:20px; right:20px; background:blue; border-radius:0 0 180px 0}
