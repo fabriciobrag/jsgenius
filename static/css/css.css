@@ -1,9 +1,22 @@
 .painel {width:320px; height:320px; margin:0 auto; position:relative; background:#222; padding:20px; border-radius:50%;}
 .color {width:150px; height:150px; position:absolute; cursor:pointer}
-.color.on {box-shadow:0 0 50px rgba(255,255,255,0.65) inset}
-.color:active {box-shadow:0 0 50px rgba(0,0,0,0.65) inset}
+.color.on,.color:active {box-shadow:0 0 50px rgba(255,255,255,0.5) inset;
+	-webkit-transition:box-shadow .1s linear;
+}
 
 .green {top:20px; left:20px; background:green; border-radius:180px 0 0 0}
+.green.on {
+	background:-webkit-radial-gradient(bottom right,rgba(120,255,120,1),green);
+}
 .red {top:20px; right:20px; background:red; border-radius:0 180px 0 0}
+.red.on {
+	background:-webkit-radial-gradient(bottom left,rgba(255,120,120,1),red);
+}
 .yellow {bottom:20px; left:20px; background:yellow; border-radius:0 0 0 180px}
+.yellow.on {
+	background:-webkit-radial-gradient(top right,rgba(255,255,120,1),yellow);
+}
 .blue {bottom:20px; right:20px; background:blue; border-radius:0 0 180px 0}
+.blue.on {
+	background:-webkit-radial-gradient(top left,rgba(120,120,255,1),blue);
+}
